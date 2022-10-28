@@ -1,0 +1,12 @@
+# generate using config-init
+# docs: https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties
+
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+[*.{go, mod}]
+indent_style = tab
+indent_size = 4

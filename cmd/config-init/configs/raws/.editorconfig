@@ -1,0 +1,35 @@
+# generate using config-init
+# docs: https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties
+
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# example pattern
+
+# Match js and py files
+# [*.{js,py}]
+# Match only js files
+# [*.py]
+# Specific file
+# [Makefile]
+# All JS under lib directory
+# [lib/**.js]
+# Matches the exact files either package.json or .travis.yml
+# [{package.json,.travis.yml}]
+
+# properties
+
+# indent_style = "<tab|space>"
+# indent_size = integer|"<tab>"
+# tab_width = integer
+# end_of_line = "<lf|crlf|cr>"
+# charset = "<latin1|utf-8|utf-16be|utf-16le|utf-8-bom>"
+# trim_trailing_whitespace = true|false
+# insert_final_newline = true|false
+# max_line_length = integer|"<off>"
+
+# unset properties
+# indent_size = unset

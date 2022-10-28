@@ -1,0 +1,26 @@
+# generate using config-init
+# docs: https://prettier.io/docs/en/options.html
+
+printWidth: 80
+tabWidth: 4
+useTabs: false
+semi: true
+singleQuote: false
+quoteProps: "as-needed" # "<as-needed|consistent|preserve>"
+jsxSingleQuote: false
+trailingComma: "es5" # "<es5|none|all>"
+bracketSpacing: true
+bracketSameLine: false
+arrowParens: "always" # "<always|avoid>"
+rangeStart: 0
+# rangeEnd: .inf
+# parser: null
+# filepath: ""
+requirePragma: false
+insertPragma: false
+proseWrap: "preserve" # "<always|never|preserve>"
+htmlWhitespaceSensitivity: "css" # "<css|strict|ignore>"
+vueIndentScriptAndStyle: false
+endOfLine: "lf" # "<lf|crlf|cr|auto>"
+embeddedLanguageFormatting: "auto" # "<auto|off>"
+singleAttributePerLine: false
