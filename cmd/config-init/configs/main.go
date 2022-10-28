@@ -26,6 +26,12 @@ type Info struct {
 }
 
 var List = map[string]Info{
+	"deno": {
+		Files: []File{{
+			PathTarget: "deno.jsonc",
+			PathSource: "raws/deno.jsonc",
+		}},
+	},
 	"editorconfig": {
 		Files: []File{{
 			PathTarget: ".editorconfig",

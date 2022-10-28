@@ -1,0 +1,75 @@
+// generate using config-init
+// docs: https://deno.land/x/deno@v1.27.0/cli/schemas/config-file.v1.json?source=
+
+{
+  "compilerOptions": {
+    // Instructs the TypeScript compiler how to compile .ts files.
+    // docs: https://www.typescriptlang.org/tsconfig
+    "allowJs": true, // Allow JavaScript files to be a part of your program. Use the `checkJS` option to get errors from these files.
+    "allowUnreachableCode": false, // Disable error reporting for unreachable code.
+    "allowUnusedLabels": false, // Disable error reporting for unused labels.
+    "checkJs": false, // Enable error reporting in type-checked JavaScript files.
+    // "experimentalDecorators": true, // Enable experimental support for TC39 stage 2 draft decorators.
+    "jsx": "react", // "<preserve|react|react-jsx|react-jsxdev|react-native>" Specify what JSX code is generated.
+    "jsxFactory": "React.createElement", // Specify the JSX factory function used when targeting React JSX emit, e.g. 'React.createElement' or 'h'".
+    "jsxFragmentFactory": "React.Fragment", // Specify the JSX Fragment reference used for fragments when targeting React JSX emit e.g. 'React.Fragment' or 'Fragment'.
+    "jsxImportSource": "react", // Specify module specifier used to import the JSX factory functions when using jsx: 'react-jsx*'.
+    "keyofStringsOnly": false, // Make keyof only return strings instead of string, numbers or symbols. Legacy option.
+    "lib": ["deno.window"], // Specify a set of bundled library declaration files that describe the target runtime environment.
+    "noFallthroughCasesInSwitch": false, // Enable error reporting for fallthrough cases in switch statements.
+    "noImplicitAny": true, // Enable error reporting for expressions and declarations with an implied `any` type.
+    "noImplicitOverride": false, // Ensure overriding members in derived classes are marked with an override modifier.
+    "noImplicitReturns": false, // Enable error reporting for codepaths that do not explicitly return in a function.
+    "noImplicitThis": true, // Enable error reporting when `this` is given the type `any`.
+    "noImplicitUseStrict": true, // Disable adding 'use strict' directives in emitted JavaScript files.
+    "noStrictGenericChecks": false, // Disable strict checking of generic signatures in function types.
+    "noUnusedLocals": false, // Enable error reporting when a local variables aren't read.
+    "noUnusedParameters": false, // Raise an error when a function parameter isn't read
+    "noUncheckedIndexedAccess": false, // Add `undefined` to a type when accessed using an index.
+    "strict": true, // Enable all strict type checking options.
+    "strictBindCallApply": true, // Check that the arguments for `bind`, `call`, and `apply` methods match the original function.
+    "strictFunctionTypes": true, // When assigning functions, check to ensure parameters and the return values are subtype-compatible.
+    "strictPropertyInitialization": true, // Check for class properties that are declared but not set in the constructor.
+    "strictNullChecks": true, // When type checking, take into account `null` and `undefined`.
+    "suppressExcessPropertyErrors": false, // Disable reporting of excess property errors during the creation of object literals.
+    "suppressImplicitAnyIndexErrors": false, // Suppress `noImplicitAny` errors when indexing objects that lack index signatures.
+  },
+  // "importMap": "import_map.json", // The location of an import map to be used when resolving modules. If an import map is explicitly specified, it will override this value.
+  "lint": {
+    "files": {
+      // "include": ["foo/", "bar/"],
+      // "exclude": ["fizz/", "buzz/"],
+    },
+    "rules": {
+      // "tags": ["recommended"], // List of tag names that will be run. Empty list disables all tags and will only use rules from `include`.
+      // "include": ["ban-untagged-todo"], // List of rule names that will be run. Even if the same rule is in `exclude` it will be run.
+      // "exclude": ["no-unused-vars"], // List of rule names that will be excluded from configured tag sets. If the same rule is in `include` it be run.
+    },
+    "report": "pretty", // "<pretty|json|compact>" The default report format to use when linting
+  },
+  "fmt": {
+    // Configuration for formatter
+    "files": {
+      // "include": ["foo/", "bar/"],
+      // "exclude": ["fizz/", "buzz/"],
+    },
+    "options": {
+      "useTabs": false, // Whether to use tabs (true) or spaces (false) for indentation.
+      "lineWidth": 80, // The width of a line the printer will try to stay under. Note that the printer may exceed this width in certain cases.
+      "indentWidth": 2, // The number of characters for an indent.
+      "singleQuote": false, // Whether to use single quote (true) or double quote (false) for quotation.
+      "proseWrap": "always", // "<always|never|preserve>" Define how prose should be wrapped in Markdown files
+    }
+  },
+  "tasks": {
+    // Configuration for deno task
+    // "echo": "echo hello world",
+  },
+  "test": {
+    // Configuration for deno test
+    "files": {
+      // "include": ["foo/", "bar/"],
+      // "exclude": ["fizz/", "buzz/"],
+    }
+  }
+}
