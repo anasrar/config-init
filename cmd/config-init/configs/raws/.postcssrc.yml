@@ -1,0 +1,8 @@
+# from: null # "src/path"
+# to: null # "dest/path"
+# parser: false # "sugarss"
+# map: false
+# syntax: false # "postcss-scss"
+# stringifier: false # "midas"
+# plugins:
+#   postcss-plugin: {}

@@ -38,6 +38,12 @@ var List = map[string]Info{
 			PathSource: "raws/.editorconfig",
 		}},
 	},
+	"postcss": {
+		Files: []File{{
+			PathTarget: ".postcssrc.yml",
+			PathSource: "raws/.postcssrc.yml",
+		}},
+	},
 	"prettier": {
 		Files: []File{{
 			PathTarget: ".prettierrc.yml",
